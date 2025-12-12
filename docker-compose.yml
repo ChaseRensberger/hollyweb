@@ -4,9 +4,14 @@ services:
     ports:
       - "7687:7687"
       - "7444:7444"
+    environment:
+      MEMGRAPH_USER: hollyweb
+      MEMGRAPH_PASSWORD: hollyweb
   lab:
     image: memgraph/lab
     ports:
       - "3000:3000"
     environment:
       QUICK_CONNECT_MG_HOST: memgraph
+      QUICK_CONNECT_MG_USER: hollyweb
+      QUICK_CONNECT_MG_PASWORD: hollyweb
