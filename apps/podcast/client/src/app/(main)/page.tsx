@@ -85,6 +85,8 @@ function EpisodeEntry({ episode }: { episode: Episode }) {
   )
 }
 
+export const dynamic = 'force-dynamic'
+
 export default async function Home() {
   let episodes = await getAllEpisodes()
 
@@ -107,5 +109,3 @@ export default async function Home() {
     </div>
   )
 }
-
-export const revalidate = 10
