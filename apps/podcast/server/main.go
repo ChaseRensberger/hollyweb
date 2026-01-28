@@ -58,8 +58,8 @@ func getSampleEpisodes() RSS {
 					Content:     "<p>Welcome to our podcast! In this inaugural episode, we're excited to share our vision and what listeners can expect in future episodes. We'll be covering technology, innovation, and the stories behind great ideas.</p>",
 					Enclosures: []Enclosure{
 						{
-							URL:  "https://example.com/episodes/episode-1.mp3",
-							Type: "audio/mpeg",
+							URL:  "https://hollyweb.s3.us-east-1.amazonaws.com/episode1.wav",
+							Type: "audio/wav",
 						},
 					},
 				},
@@ -71,21 +71,8 @@ func getSampleEpisodes() RSS {
 					Content:     "<p>This week, we dive deep into the future of web development. From new frameworks to evolving best practices, we discuss how the landscape is changing and what developers need to know to stay ahead.</p>",
 					Enclosures: []Enclosure{
 						{
-							URL:  "https://example.com/episodes/episode-2.mp3",
-							Type: "audio/mpeg",
-						},
-					},
-				},
-				{
-					ID:          3,
-					Title:       "Building Scalable Systems",
-					PubDate:     baseTime.AddDate(0, 0, 14).Format(time.RFC1123Z),
-					Description: "A deep dive into architectural patterns for building systems that scale.",
-					Content:     "<p>Scalability is crucial for modern applications. In this episode, we break down the key architectural patterns and principles that enable systems to grow gracefully, from microservices to distributed databases.</p>",
-					Enclosures: []Enclosure{
-						{
-							URL:  "https://example.com/episodes/episode-3.mp3",
-							Type: "audio/mpeg",
+							URL:  "https://hollyweb.s3.us-east-1.amazonaws.com/episode2.wav",
+							Type: "audio/wav",
 						},
 					},
 				},
