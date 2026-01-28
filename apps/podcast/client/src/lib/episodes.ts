@@ -1,6 +1,9 @@
 import { parse as parseFeed } from 'rss-to-json'
 import { array, number, object, parse, string } from 'valibot'
 
+// const feedUrl = 'http://localhost:1323/api/feed'
+const feedUrl = 'https://their-side-feed.vercel.app/api/feed'
+
 export interface Episode {
   id: number
   title: string
@@ -32,9 +35,7 @@ export async function getAllEpisodes() {
     ),
   })
 
-  let feed = (await parseFeed(
-    'https://their-side-feed.vercel.app/api/feed',
-  )) as unknown
+  let feed = (await parseFeed(feedUrl)) as unknown
   let items = parse(FeedSchema, feed).items
 
   let episodes: Array<Episode> = items.map(
