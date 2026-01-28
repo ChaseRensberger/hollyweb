@@ -18,6 +18,7 @@ type Enclosure struct {
 
 type Item struct {
 	XMLName     xml.Name    `xml:"item"`
+	GUID        string      `xml:"guid"`
 	ID          int         `xml:"id"`
 	Title       string      `xml:"title"`
 	PubDate     string      `xml:"pubDate"`
@@ -51,6 +52,7 @@ func getSampleEpisodes() RSS {
 			Link:  "http://localhost:1323",
 			Items: []Item{
 				{
+					GUID:        "1",
 					ID:          1,
 					Title:       "Guam is sinking!",
 					PubDate:     baseTime.Format(time.RFC1123Z),
@@ -64,6 +66,7 @@ func getSampleEpisodes() RSS {
 					},
 				},
 				{
+					GUID:        "2",
 					ID:          2,
 					Title:       "Oscar Nominations (ft. Justin Johnson)",
 					PubDate:     baseTime.AddDate(0, 0, 7).Format(time.RFC1123Z),
