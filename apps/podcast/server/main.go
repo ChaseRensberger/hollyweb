@@ -5,6 +5,7 @@ import (
 	"net/http"
 	"time"
 
+	"github.com/joho/godotenv"
 	"github.com/labstack/echo/v5"
 	"github.com/labstack/echo/v5/middleware"
 )
@@ -94,6 +95,7 @@ func getSampleEpisodes() RSS {
 }
 
 func main() {
+	godotenv.Load(".env.local")
 	e := echo.New()
 	e.Use(middleware.RequestLogger())
 	e.Use(middleware.CORSWithConfig(middleware.CORSConfig{
