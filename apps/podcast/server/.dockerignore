@@ -1,0 +1,21 @@
+# Git
+.git
+.gitignore
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Build artifacts
+hollyweb-podcast-server
+*.exe
+*.test
+*.out
+
+# IDE
+.vscode
+.idea
+
+# Fly.io
+fly.toml
