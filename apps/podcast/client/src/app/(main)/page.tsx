@@ -94,9 +94,15 @@ export default async function Home() {
         <h1 className="text-2xl/7 font-bold text-slate-900">Episodes</h1>
       </Container>
       <div className="divide-y divide-slate-100 sm:mt-4 lg:mt-8 lg:border-t lg:border-slate-100">
-        {episodes.map((episode) => (
-          <EpisodeEntry key={episode.id} episode={episode} />
-        ))}
+        {episodes.length === 0 ? (
+          <div className="py-10 text-center text-slate-500">
+            <p>No episodes available yet. Check back soon!</p>
+          </div>
+        ) : (
+          episodes.map((episode) => (
+            <EpisodeEntry key={episode.id} episode={episode} />
+          ))
+        )}
       </div>
     </div>
   )
