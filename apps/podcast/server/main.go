@@ -41,7 +41,7 @@ type RSS struct {
 }
 
 func getSampleEpisodes() RSS {
-	baseTime := time.Date(2024, 1, 1, 0, 0, 0, 0, time.UTC)
+	baseTime := time.Date(2025, 1, 1, 0, 0, 0, 0, time.UTC)
 
 	return RSS{
 		Version: "2.0",
@@ -52,10 +52,10 @@ func getSampleEpisodes() RSS {
 			Items: []Item{
 				{
 					ID:          1,
-					Title:       "Welcome to the Podcast",
+					Title:       "Guam is sinking!",
 					PubDate:     baseTime.Format(time.RFC1123Z),
-					Description: "In our first episode, we introduce the show and discuss what's to come.",
-					Content:     "<p>Welcome to our podcast! In this inaugural episode, we're excited to share our vision and what listeners can expect in future episodes. We'll be covering technology, innovation, and the stories behind great ideas.</p>",
+					Description: "Oh no that can't be good.",
+					Content:     "<p>Guam is sinking! that cant be good</p>",
 					Enclosures: []Enclosure{
 						{
 							URL:  "https://hollyweb.s3.us-east-1.amazonaws.com/episode1.wav",
@@ -65,10 +65,10 @@ func getSampleEpisodes() RSS {
 				},
 				{
 					ID:          2,
-					Title:       "The Future of Web Development",
+					Title:       "Oscar Nominations (ft. Justin Johnson)",
 					PubDate:     baseTime.AddDate(0, 0, 7).Format(time.RFC1123Z),
-					Description: "We explore emerging trends in web development and what they mean for developers.",
-					Content:     "<p>This week, we dive deep into the future of web development. From new frameworks to evolving best practices, we discuss how the landscape is changing and what developers need to know to stay ahead.</p>",
+					Description: "Justin joins us to talk about Wishing Well and Gunston Road.",
+					Content:     "<p>Oscar Nominations (ft. Justin Johnson)</p>",
 					Enclosures: []Enclosure{
 						{
 							URL:  "https://hollyweb.s3.us-east-1.amazonaws.com/episode2.wav",
