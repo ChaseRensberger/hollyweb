@@ -2,7 +2,7 @@ import { parse as parseFeed } from 'rss-to-json'
 import { array, number, object, parse, string } from 'valibot'
 
 const feedUrl =
-  process.env.NEXT_PUBLIC_API_URL || 'http://localhost:1323/api/feed'
+  process.env.NEXT_PUBLIC_API_URL || 'https://hollyweb-podcast-server.fly.dev/api/feed'
 
 export interface Episode {
   id: number

@@ -86,7 +86,7 @@ func main() {
 	e := echo.New()
 	e.Use(middleware.RequestLogger())
 	e.Use(middleware.CORSWithConfig(middleware.CORSConfig{
-		AllowOrigins: []string{"http://localhost:3000", "http://localhost:3001"},
+		AllowOrigins: []string{"*"},
 	}))
 
 	e.GET("/", func(c *echo.Context) error {
