@@ -88,7 +88,13 @@ function EpisodeEntry({ episode }: { episode: Episode }) {
 export const dynamic = 'force-dynamic'
 
 export default async function Home() {
+  console.log('[page.tsx] ==> HOME PAGE RENDERING')
+  console.log('[page.tsx] Dynamic rendering enabled')
+  
   let episodes = await getAllEpisodes()
+  
+  console.log('[page.tsx] ==> EPISODES RECEIVED:', episodes.length)
+  console.log('[page.tsx] Episodes:', JSON.stringify(episodes, null, 2))
 
   return (
     <div className="pt-16 pb-12 sm:pb-4 lg:pt-12">
