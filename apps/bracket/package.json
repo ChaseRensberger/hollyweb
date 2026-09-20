@@ -1,0 +1,35 @@
+{
+  "name": "@hollyweb/bracket",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "bun --watch server/index.ts",
+    "start": "bun dist/production.js",
+    "build": "bun run build.ts",
+    "typecheck": "tsc --noEmit",
+    "db:generate": "bunx --bun drizzle-kit generate",
+    "db:migrate": "bun server/migrate.ts"
+  },
+  "dependencies": {
+    "@hollyweb/auth": "workspace:*",
+    "@hollyweb/core": "workspace:*",
+    "@openauthjs/openauth": "latest",
+    "@phosphor-icons/react": "^2.1.10",
+    "@tanstack/react-form": "^1.33.2",
+    "@tanstack/react-query": "^5.102.4",
+    "@tanstack/react-router": "1.169.2",
+    "drizzle-orm": "^0.45.1",
+    "hono": "^4.12.0",
+    "motion": "^12.38.0",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
+    "sharp": "^0.34.5",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "bun-plugin-tailwind": "latest",
+    "drizzle-kit": "^0.31.9"
+  }
+}

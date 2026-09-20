@@ -1,0 +1,21 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["react"],
+  "env": { "browser": true, "node": true },
+  "ignorePatterns": ["**/node_modules/**", "**/dist/**", "**/drizzle/meta/**", "**/*.gen.ts"],
+  "rules": {
+    "typescript/no-explicit-any": "error",
+    "react/rules-of-hooks": "error",
+    "react/exhaustive-deps": "warn",
+    "react/no-children-prop": "off",
+    "react/only-export-components": ["error", { "allowConstantExport": true }],
+    "react/refs": "off",
+    "react/set-state-in-effect": "off"
+  },
+  "overrides": [
+    {
+      "files": ["apps/bracket/client/router.tsx"],
+      "rules": { "react/only-export-components": "off" }
+    }
+  ]
+}

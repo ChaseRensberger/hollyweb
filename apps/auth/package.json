@@ -1,0 +1,26 @@
+{
+  "name": "@hollyweb/auth",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./subjects": "./src/subjects.ts",
+    "./client": "./src/client.ts"
+  },
+  "scripts": {
+    "dev": "bun --watch src/index.ts",
+    "start": "bun src/index.ts",
+    "build": "bun build src/index.ts --target=bun --packages=external --outdir=dist",
+    "typecheck": "tsc --noEmit",
+    "db:generate": "bunx --bun drizzle-kit generate",
+    "db:migrate": "bun src/migrate.ts"
+  },
+  "dependencies": {
+    "@openauthjs/openauth": "latest",
+    "drizzle-orm": "^0.45.1",
+    "hono": "^4.12.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.31.9"
+  }
+}

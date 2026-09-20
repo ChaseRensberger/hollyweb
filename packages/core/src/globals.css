@@ -1,0 +1,156 @@
+@import "tailwindcss";
+@plugin "tailwindcss-animate";
+@custom-variant dark (&:is(.dark *));
+
+@font-face {
+  font-family: "Geist Variable";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("../node_modules/@fontsource-variable/geist/files/geist-latin-wght-normal.woff2");
+}
+@font-face {
+  font-family: "Geist Mono Variable";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("../node_modules/@fontsource-variable/geist-mono/files/geist-mono-latin-wght-normal.woff2");
+}
+
+:root {
+  color-scheme: light;
+  --radius: 0.25rem;
+  --background: #f5f3f1;
+  --foreground: #262123;
+  --card: #fffcfa;
+  --card-foreground: #262123;
+  --popover: #fffcfa;
+  --popover-foreground: #262123;
+  --primary: #99434b;
+  --primary-foreground: #fff7f5;
+  --secondary: #eae5e2;
+  --secondary-foreground: #4b4144;
+  --muted: #eee9e6;
+  --muted-foreground: #74686c;
+  --accent: #eee0df;
+  --accent-foreground: #863b43;
+  --destructive: #b63843;
+  --success: #42725c;
+  --warning: #92632e;
+  --border: #ded6d2;
+  --input: #cfc4bf;
+  --ring: #b65a64;
+  --overlay: #18121480;
+}
+.dark {
+  color-scheme: dark;
+  --background: #141315;
+  --foreground: #e9e4e2;
+  --card: #1c1a1d;
+  --card-foreground: #e9e4e2;
+  --popover: #232024;
+  --popover-foreground: #e9e4e2;
+  --primary: #b85d64;
+  --primary-foreground: #fff9f7;
+  --secondary: #2c272b;
+  --secondary-foreground: #d2c8ca;
+  --muted: #242125;
+  --muted-foreground: #a89b9f;
+  --accent: #38272d;
+  --accent-foreground: #e0a2a6;
+  --destructive: #e47a82;
+  --success: #8cb9a0;
+  --warning: #cba477;
+  --border: #353035;
+  --input: #4b4147;
+  --ring: #c7777e;
+  --overlay: #080609b3;
+}
+@theme inline {
+  --font-sans: "Geist Variable", system-ui, sans-serif;
+  --font-mono: "Geist Mono Variable", monospace;
+  --radius-sm: 0.1875rem;
+  --radius-md: var(--radius);
+  --radius-lg: 0.3125rem;
+  --radius-xl: 0.375rem;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-overlay: var(--overlay);
+  --shadow-xs: 0 1px 2px #10090c0a;
+  --shadow-sm: 0 2px 8px #10090c12;
+  --shadow-lg: 0 16px 48px #08040740, 0 1px 4px #08040730;
+}
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply m-0 bg-background text-foreground font-sans antialiased;
+  }
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]),
+  a,
+  select {
+    cursor: pointer;
+  }
+  button,
+  a,
+  input,
+  select,
+  textarea {
+    -webkit-tap-highlight-color: transparent;
+  }
+  :focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 3px;
+  }
+  ::selection {
+    background: var(--accent);
+    color: var(--accent-foreground);
+  }
+  h1,
+  h2,
+  h3 {
+    letter-spacing: -0.035em;
+  }
+}
+@layer components {
+  .holly-popup {
+    box-shadow: var(--shadow-lg);
+    border-top-color: color-mix(in srgb, var(--primary) 35%, var(--border));
+  }
+  .holly-field {
+    @apply bg-card shadow-xs hover:border-muted-foreground/60;
+  }
+  .holly-section-label {
+    @apply font-mono text-[11px] font-medium tracking-[0.14em] uppercase text-muted-foreground;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

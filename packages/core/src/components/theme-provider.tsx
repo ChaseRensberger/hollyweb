@@ -1,0 +1,86 @@
+import { useEffect, useState } from "react";
+import {
+  getTheme,
+  normalizeColorMode,
+  type ColorMode,
+  type ResolvedColorMode,
+  type ThemeID,
+} from "#themes/registry";
+import { ThemeProviderContext } from "#components/theme-context";
+import { readPreference, writePreference } from "#lib/storage";
+
+export type { ColorMode, ResolvedColorMode, Theme, ThemeID } from "#themes/registry";
+
+type ThemeProviderProps = {
+  children: React.ReactNode;
+  defaultTheme?: ThemeID;
+  defaultColorMode?: ColorMode;
+  storageKey?: string;
+};
+
+export function ThemeProvider({
+  children,
+  defaultTheme = "default",
+  defaultColorMode = "system",
+  storageKey = "hollyweb-theme",
+  ...props
+}: ThemeProviderProps) {
+  const [theme, setThemeState] = useState(() =>
+    getTheme(readPreference(storageKey) ?? defaultTheme),
+  );
+  const [colorMode, setColorModeState] = useState<ColorMode>(() =>
+    normalizeColorMode(
+      theme,
+      (readPreference(`${storageKey}-mode`) as ColorMode) || defaultColorMode,
+    ),
+  );
+  const [systemColorMode, setSystemColorMode] = useState<ResolvedColorMode>(() =>
+    window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light",
+  );
+  const preferredColorMode = colorMode === "system" ? systemColorMode : colorMode;
+  const resolvedColorMode = theme.modes.includes(preferredColorMode)
+    ? preferredColorMode
+    : (theme.modes[0] ?? "dark");
+
+  useEffect(() => {
+    if (colorMode !== "system") return;
+    const media = window.matchMedia("(prefers-color-scheme: dark)");
+    const updateSystemColorMode = () => setSystemColorMode(media.matches ? "dark" : "light");
+    updateSystemColorMode();
+    media.addEventListener("change", updateSystemColorMode);
+    return () => media.removeEventListener("change", updateSystemColorMode);
+  }, [colorMode]);
+
+  useEffect(() => {
+    const root = window.document.documentElement;
+    root.dataset.theme = theme.id;
+    root.dataset.mode = resolvedColorMode;
+    root.classList.toggle("dark", resolvedColorMode === "dark");
+    root.classList.toggle("light", resolvedColorMode === "light");
+  }, [resolvedColorMode, theme]);
+
+  const value = {
+    theme,
+    colorMode,
+    resolvedColorMode,
+    setTheme: (id: ThemeID, mode?: ColorMode) => {
+      const nextTheme = getTheme(id);
+      const nextColorMode = normalizeColorMode(nextTheme, mode ?? colorMode);
+      writePreference(storageKey, nextTheme.id);
+      writePreference(`${storageKey}-mode`, nextColorMode);
+      setThemeState(nextTheme);
+      setColorModeState(nextColorMode);
+    },
+    setColorMode: (mode: ColorMode) => {
+      const nextColorMode = normalizeColorMode(theme, mode);
+      writePreference(`${storageKey}-mode`, nextColorMode);
+      setColorModeState(nextColorMode);
+    },
+  };
+
+  return (
+    <ThemeProviderContext.Provider {...props} value={value}>
+      {children}
+    </ThemeProviderContext.Provider>
+  );
+}

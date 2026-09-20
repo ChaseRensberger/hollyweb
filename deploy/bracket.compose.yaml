@@ -1,0 +1,14 @@
+name: hollyweb-bracket
+services:
+  bracket:
+    build:
+      context: ..
+      dockerfile: apps/bracket/Dockerfile
+    restart: unless-stopped
+    env_file: bracket.env
+    ports:
+      - "3000:3000"
+    volumes:
+      - bracket-data:/data
+volumes:
+  bracket-data:

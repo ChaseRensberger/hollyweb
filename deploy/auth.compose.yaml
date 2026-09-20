@@ -1,0 +1,14 @@
+name: hollyweb-auth
+services:
+  auth:
+    build:
+      context: ..
+      dockerfile: apps/auth/Dockerfile
+    restart: unless-stopped
+    env_file: auth.env
+    ports:
+      - "3000:3000"
+    volumes:
+      - auth-data:/data
+volumes:
+  auth-data:
