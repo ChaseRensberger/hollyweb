@@ -7,14 +7,14 @@ COPY apps/hollydraft/package.json ./apps/hollydraft/package.json
 COPY packages/core/package.json ./packages/core/package.json
 RUN bun install --frozen-lockfile
 COPY . .
-RUN bun run --filter @hollyweb/auth build
+RUN bun run --filter @hollyweb/hollydraft build
 
 FROM oven/bun:1.3.14
 WORKDIR /app
 COPY --from=build --chown=bun:bun /app /app
 RUN mkdir -p /data && chown bun:bun /data
-WORKDIR /app/apps/auth
-ENV NODE_ENV=production PORT=3000 AUTH_DATABASE=/data/auth.sqlite
+WORKDIR /app/apps/hollydraft
+ENV NODE_ENV=production PORT=3000 HOLLYDRAFT_DATABASE=/data/hollydraft.sqlite
 USER bun
 VOLUME ["/data"]
 EXPOSE 3000

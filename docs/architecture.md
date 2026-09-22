@@ -48,3 +48,16 @@ The server checks picks against the tournament rules before saving. Optimistic r
 The browser stores a complete version snapshot for a guest run. A later bracket edit does not change that local run.
 
 Core owns generic UI behavior and styling. Bracket owns the editor, matchup cards, tournament tree, routes, and data requests.
+
+## HollyDraft data
+
+HollyDraft owns `hollydraft.sqlite` and uses the registered `hollydraft` OAuth client.
+Its local callback is `http://localhost:3003/auth/callback`.
+Its cookies use the `hollydraft-session` and `hollydraft-flow` names, with the `__Host-` prefix on HTTPS origins.
+
+The database stores the shared movie catalog, sourced gross reports, leagues, teams, drafts, rosters, trades, and activity events.
+SQLite transactions protect draft picks, invite capacity, trade transfers, and final standings.
+Persisted deadlines survive restarts. Authenticated SSE streams replay persisted league events.
+
+The first data workflow uses researched JSON imports. Automatic daily source fetching comes later.
+The [HollyDraft reference](../apps/hollydraft/README.md) defines the API and deployment commands.

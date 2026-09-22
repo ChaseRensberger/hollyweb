@@ -48,6 +48,19 @@
         "drizzle-kit": "^0.31.9",
       },
     },
+    "apps/hollydraft": {
+      "name": "@hollyweb/hollydraft",
+      "dependencies": {
+        "@hollyweb/auth": "workspace:*",
+        "@openauthjs/openauth": "latest",
+        "drizzle-orm": "^0.45.1",
+        "hono": "^4.12.0",
+        "zod": "^4.4.3",
+      },
+      "devDependencies": {
+        "drizzle-kit": "^0.31.9",
+      },
+    },
     "packages/core": {
       "name": "@hollyweb/core",
       "dependencies": {
@@ -159,6 +172,8 @@
     "@hollyweb/bracket": ["@hollyweb/bracket@workspace:apps/bracket"],
 
     "@hollyweb/core": ["@hollyweb/core@workspace:packages/core"],
+
+    "@hollyweb/hollydraft": ["@hollyweb/hollydraft@workspace:apps/hollydraft"],
 
     "@img/colour": ["@img/colour@1.1.0", "", {}, "sha512-Td76q7j57o/tLVdgS746cYARfSyxk8iEfRxewL9h4OMzYhbW4TAcppl0mT4eyqXddh6L/jwoM75mo7ixa/pCeQ=="],
 

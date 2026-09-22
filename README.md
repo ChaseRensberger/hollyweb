@@ -1,6 +1,6 @@
 # Hollyweb
 
-A Bun monorepo for Hollyweb apps. Bracket is the first app, with a separate authentication service and a shared React component library.
+A Bun monorepo for Bracket and HollyDraft, with a central authentication service and a shared React component library.
 
 ## Run locally
 
@@ -12,13 +12,22 @@ bun run db:migrate
 bun run dev
 ```
 
-| Service       | URL                                              |
-| ------------- | ------------------------------------------------ |
-| Bracket       | <http://localhost:3000>                          |
-| Hollyweb auth | <http://localhost:3001>                          |
-| Core gallery  | <http://localhost:3002> (run `bun run dev:core`) |
+| Service        | URL                                              |
+| -------------- | ------------------------------------------------ |
+| Bracket        | <http://localhost:3000>                          |
+| Hollyweb auth  | <http://localhost:3001>                          |
+| Core gallery   | <http://localhost:3002> (run `bun run dev:core`) |
+| HollyDraft API | <http://localhost:3003>                          |
 
 The migration command also creates a playable example at `/b/comfort-food`. Guests can complete it without an account.
+
+HollyDraft starts with an empty catalog. Import its researched 2027 dataset with:
+
+```sh
+bun run --filter @hollyweb/hollydraft data:import catalog/2027.json
+```
+
+The dataset contains 64 candidates and 13 qualifying posters. See the [HollyDraft API reference](apps/hollydraft/README.md).
 
 ### Enable Google login
 
@@ -39,9 +48,13 @@ apps/
     client/   React, TanStack Router, Query, and Form
     server/   Hono API, Drizzle, uploads, app sessions
     shared/   Bracket rules and Zod schemas
+  hollydraft/
+    server/   League API, drafts, trades, scoring, imports, and app sessions
+    shared/   Game rules and request schemas
+    catalog/  Sourced movie imports
 packages/
   core/       Base UI components, Holly styles, themes, and 53 showcases
-deploy/       Separate Compose definitions for the two VMs
+deploy/       Separate Compose definitions for each service
 ```
 
 Core preserves the component APIs from Wingman. Holly uses its own charcoal and muted-red palette, Geist typography, small radii, and component styling.
@@ -62,19 +75,20 @@ Bracket disables browser HMR because Bun 1.3.14 can show a blank page when a sty
 
 ## Commands
 
-| Command                | Purpose                                 |
-| ---------------------- | --------------------------------------- |
-| `bun run dev`          | Run auth and Bracket                    |
-| `bun run dev:auth`     | Run auth only                           |
-| `bun run dev:bracket`  | Run Bracket only                        |
-| `bun run dev:core`     | Run the component gallery               |
-| `bun run build`        | Build both apps and the gallery         |
-| `bun run typecheck`    | Run TypeScript checks in all workspaces |
-| `bun run lint`         | Run Oxlint and reject warnings          |
-| `bun run format`       | Format the repository with Oxfmt        |
-| `bun run format:check` | Check formatting                        |
-| `bun test`             | Run tournament, API, and auth tests     |
-| `bun run db:migrate`   | Apply migrations to both app databases  |
+| Command                  | Purpose                                 |
+| ------------------------ | --------------------------------------- |
+| `bun run dev`            | Run auth, Bracket, and HollyDraft       |
+| `bun run dev:auth`       | Run auth only                           |
+| `bun run dev:bracket`    | Run Bracket only                        |
+| `bun run dev:hollydraft` | Run the HollyDraft API only             |
+| `bun run dev:core`       | Run the component gallery               |
+| `bun run build`          | Build all apps and the gallery          |
+| `bun run typecheck`      | Run TypeScript checks in all workspaces |
+| `bun run lint`           | Run Oxlint and reject warnings          |
+| `bun run format`         | Format the repository with Oxfmt        |
+| `bun run format:check`   | Check formatting                        |
+| `bun test`               | Run game, API, and auth tests           |
+| `bun run db:migrate`     | Apply migrations to all app databases   |
 
 Each app also provides `db:generate` and `db:migrate` commands. Run `db:generate` from the app directory after a schema change. Commit the generated SQL and metadata.
 

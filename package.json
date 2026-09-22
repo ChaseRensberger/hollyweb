@@ -9,6 +9,7 @@
   "scripts": {
     "dev": "bun run scripts/dev.ts",
     "dev:bracket": "bun run --filter @hollyweb/bracket dev",
+    "dev:hollydraft": "bun run --filter @hollyweb/hollydraft dev",
     "dev:auth": "bun run --filter @hollyweb/auth dev",
     "dev:core": "bun run --filter @hollyweb/core dev",
     "build": "bun run --sequential --workspaces build",

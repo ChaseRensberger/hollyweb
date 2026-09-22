@@ -6,7 +6,10 @@ export function authConfig() {
   const clients = z
     .record(z.string(), z.array(z.url()))
     .parse(
-      JSON.parse(process.env.AUTH_CLIENTS ?? '{"bracket":["http://localhost:3000/auth/callback"]}'),
+      JSON.parse(
+        process.env.AUTH_CLIENTS ??
+          '{"bracket":["http://localhost:3000/auth/callback"],"hollydraft":["http://localhost:3003/auth/callback"]}',
+      ),
     );
   const clientID = process.env.GOOGLE_CLIENT_ID ?? "";
   const clientSecret = process.env.GOOGLE_CLIENT_SECRET ?? "";

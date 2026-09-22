@@ -1,4 +1,4 @@
-const processes = ["apps/auth", "apps/bracket"].map((cwd) =>
+const processes = ["apps/auth", "apps/bracket", "apps/hollydraft"].map((cwd) =>
   Bun.spawn(["bun", "run", "dev"], { cwd, stdout: "inherit", stderr: "inherit" }),
 );
 function stop() {

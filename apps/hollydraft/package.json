@@ -1,0 +1,24 @@
+{
+  "name": "@hollyweb/hollydraft",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "bun --watch server/index.ts",
+    "start": "bun dist/index.js",
+    "build": "bun build server/index.ts --target=bun --packages=external --outdir=dist",
+    "typecheck": "tsc --noEmit",
+    "db:generate": "bunx --bun drizzle-kit generate",
+    "db:migrate": "bun server/migrate.ts",
+    "data:import": "bun server/import.ts"
+  },
+  "dependencies": {
+    "@hollyweb/auth": "workspace:*",
+    "@openauthjs/openauth": "latest",
+    "drizzle-orm": "^0.45.1",
+    "hono": "^4.12.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.31.9"
+  }
+}

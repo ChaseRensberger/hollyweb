@@ -1,0 +1,14 @@
+name: hollyweb-hollydraft
+services:
+  hollydraft:
+    build:
+      context: ..
+      dockerfile: apps/hollydraft/Dockerfile
+    restart: unless-stopped
+    env_file: hollydraft.env
+    ports:
+      - "3003:3000"
+    volumes:
+      - hollydraft-data:/data
+volumes:
+  hollydraft-data:

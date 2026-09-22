@@ -3,6 +3,7 @@ WORKDIR /app
 COPY package.json bun.lock ./
 COPY apps/auth/package.json ./apps/auth/package.json
 COPY apps/bracket/package.json ./apps/bracket/package.json
+COPY apps/hollydraft/package.json ./apps/hollydraft/package.json
 COPY packages/core/package.json ./packages/core/package.json
 RUN bun install --frozen-lockfile
 COPY . .

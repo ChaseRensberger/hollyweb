@@ -1,0 +1,877 @@
+{
+  "version": 1,
+  "movies": [
+    {
+      "id": "avengers-secret-wars",
+      "title": "Avengers: Secret Wars",
+      "studio": "Marvel Studios",
+      "season": 2027,
+      "rank": 1,
+      "releaseDate": "2027-12-17",
+      "releaseStatus": "scheduled",
+      "source": "https://en.wikipedia.org/wiki/List_of_American_films_of_2027",
+      "researchedAt": "2026-09-20T00:00:00Z",
+      "poster": null
+    },
+    {
+      "id": "frozen-3",
+      "title": "Frozen 3",
+      "studio": "Walt Disney Animation Studios",
+      "season": 2027,
+      "rank": 2,
+      "releaseDate": "2027-11-24",
+      "releaseStatus": "scheduled",
+      "source": "https://en.wikipedia.org/wiki/Frozen_3",
+      "researchedAt": "2026-09-20T00:00:00Z",
+      "wikidataID": "Q116740642",
+      "poster": {
+        "url": "https://upload.wikimedia.org/wikipedia/en/a/a5/Frozen_3_logo.png",
+        "source": "https://en.wikipedia.org/wiki/File:Frozen_3_logo.png",
+        "kind": "logo"
+      }
+    },
+    {
+      "id": "shrek-5",
+      "title": "Shrek 5",
+      "studio": "DreamWorks Animation",
+      "season": 2027,
+      "rank": 3,
+      "releaseDate": "2027-06-30",
+      "releaseStatus": "scheduled",
+      "source": "https://en.wikipedia.org/wiki/Shrek_5",
+      "researchedAt": "2026-09-20T00:00:00Z",
+      "wikidataID": "Q30750216",
+      "poster": {
+        "url": "https://upload.wikimedia.org/wikipedia/en/b/b6/Shrek_5_film_poster.jpg",
+        "source": "https://en.wikipedia.org/wiki/File:Shrek_5_film_poster.jpg",
+        "kind": "teaser"
+      }
+    },
+    {
+      "id": "spider-man-beyond-the-spider-verse",
+      "title": "Spider-Man: Beyond the Spider-Verse",
+      "studio": "Sony Pictures Animation",
+      "season": 2027,
+      "rank": 4,
+      "releaseDate": "2027-06-18",
+      "releaseStatus": "scheduled",
+      "source": "https://en.wikipedia.org/wiki/Spider-Man:_Beyond_the_Spider-Verse",
+      "researchedAt": "2026-09-20T00:00:00Z",
+      "wikidataID": "Q110152284",
+      "poster": {
+        "url": "https://upload.wikimedia.org/wikipedia/en/a/a0/Spider-Man_Beyond_the_Spider-Verse_logo.jpg",
+        "source": "https://en.wikipedia.org/wiki/Spider-Man:_Beyond_the_Spider-Verse",
+        "kind": "logo"
+      }
+    },
+    {
+      "id": "a-minecraft-movie-squared",
+      "title": "A Minecraft Movie Squared",
+      "studio": "Warner Bros. Pictures",
+      "season": 2027,
+      "rank": 5,
+      "releaseDate": "2027-07-23",
+      "releaseStatus": "scheduled",
+      "source": "https://en.wikipedia.org/wiki/A_Minecraft_Movie_Squared",
+      "researchedAt": "2026-09-20T00:00:00Z",
+      "poster": {
+        "url": "https://upload.wikimedia.org/wikipedia/en/c/c9/A_Minecraft_Movie_Squared_logo.jpeg",
+        "source": "https://en.wikipedia.org/wiki/A_Minecraft_Movie_Squared",
+        "kind": "logo"
+      }
+    },
+    {
+      "id": "star-wars-starfighter",
+      "title": "Star Wars: Starfighter",
+      "studio": "Lucasfilm",
+      "season": 2027,
+      "rank": 6,
+      "releaseDate": "2027-05-28",
+      "releaseStatus": "scheduled",
+      "source": "https://en.wikipedia.org/wiki/Star_Wars:_Starfighter",
+      "researchedAt": "2026-09-20T00:00:00Z",
+      "poster": {
+        "url": "https://upload.wikimedia.org/wikipedia/en/8/8f/Star_Wars%2C_Starfighter_logo.jpg",
+        "source": "https://en.wikipedia.org/wiki/Star_Wars:_Starfighter",
+        "kind": "logo"
+      }
+    },
+    {
+      "id": "man-of-tomorrow",
+      "title": "Man of Tomorrow",
+      "studio": "DC Studios",
+      "season": 2027,
+      "rank": 7,
+      "releaseDate": "2027-07-09",
+      "releaseStatus": "scheduled",
+      "source": "https://en.wikipedia.org/wiki/Man_of_Tomorrow_(film)",
+      "researchedAt": "2026-09-20T00:00:00Z",
+      "poster": null
+    },
+    {
+      "id": "the-hunt-for-gollum",
+      "title": "The Lord of the Rings: The Hunt for Gollum",
+      "studio": "New Line Cinema",
+      "season": 2027,
+      "rank": 8,
+      "releaseDate": "2027-12-17",
+      "releaseStatus": "scheduled",
+      "source": "https://en.wikipedia.org/wiki/The_Lord_of_the_Rings:_The_Hunt_for_Gollum",
+      "researchedAt": "2026-09-20T00:00:00Z",
+      "poster": null
+    },
+    {
+      "id": "the-legend-of-zelda",
+      "title": "The Legend of Zelda",
+      "studio": "Columbia Pictures",
+      "season": 2027,
+      "rank": 9,
+      "releaseDate": "2027-04-30",
+      "releaseStatus": "scheduled",
+      "source": "https://en.wikipedia.org/wiki/The_Legend_of_Zelda_(film)",
+      "researchedAt": "2026-09-20T00:00:00Z",
+      "poster": {
+        "url": "https://upload.wikimedia.org/wikipedia/en/a/ab/The_Legend_of_Zelda_film_logo.jpg",
+        "source": "https://en.wikipedia.org/wiki/The_Legend_of_Zelda_(film)",
+        "kind": "logo"
+      }
+    },
+    {
+      "id": "how-to-train-your-dragon-2",
+      "title": "How to Train Your Dragon 2",
+      "studio": "Universal Pictures",
+      "season": 2027,
+      "rank": 10,
+      "releaseDate": "2027-06-11",
+      "releaseStatus": "scheduled",
+      "source": "https://en.wikipedia.org/wiki/How_to_Train_Your_Dragon_2_(2027_film)",
+      "researchedAt": "2026-09-20T00:00:00Z",
+      "poster": null
+    },
+    {
+      "id": "not-alone",
+      "title": "Not Alone",
+      "studio": "Illumination",
+      "season": 2027,
+      "rank": 11,
+      "releaseDate": "2027-04-16",
+      "releaseStatus": "scheduled",
+      "source": "https://en.wikipedia.org/wiki/Not_Alone_(film)",
+      "researchedAt": "2026-09-20T00:00:00Z",
+      "wikidataID": "Q140313972",
+      "poster": {
+        "url": "https://upload.wikimedia.org/wikipedia/en/9/96/Not_Alone_poster.jpeg",
+        "source": "https://en.wikipedia.org/wiki/File:Not_Alone_poster.jpeg",
+        "kind": "teaser"
+      }
+    },
+    {
+      "id": "godzilla-x-kong-supernova",
+      "title": "Godzilla x Kong: Supernova",
+      "studio": "Legendary Pictures",
+      "season": 2027,
+      "rank": 12,
+      "releaseDate": "2027-03-26",
+      "releaseStatus": "scheduled",
+      "source": "https://en.wikipedia.org/wiki/Godzilla_x_Kong:_Supernova",
+      "researchedAt": "2026-09-20T00:00:00Z",
+      "poster": {
+        "url": "https://upload.wikimedia.org/wikipedia/en/f/f8/Godzilla_X_Kong_Supernova_logo.png",
+        "source": "https://en.wikipedia.org/wiki/Godzilla_x_Kong:_Supernova",
+        "kind": "logo"
+      }
+    },
+    {
+      "id": "gatto",
+      "title": "Gatto",
+      "studio": "Pixar",
+      "season": 2027,
+      "rank": 13,
+      "releaseDate": "2027-03-05",
+      "releaseStatus": "scheduled",
+      "source": "https://en.wikipedia.org/wiki/Gatto_(film)",
+      "researchedAt": "2026-09-20T00:00:00Z",
+      "wikidataID": "Q135001892",
+      "poster": {
+        "url": "https://upload.wikimedia.org/wikipedia/en/5/5e/GattoPoster.jpeg",
+        "source": "https://en.wikipedia.org/wiki/File:GattoPoster.jpeg",
+        "kind": "teaser"
+      }
+    },
+    {
+      "id": "the-new-simpsons-movie",
+      "title": "The New Simpsons Movie",
+      "studio": "20th Century Studios",
+      "season": 2027,
+      "rank": 14,
+      "releaseDate": "2027-09-03",
+      "releaseStatus": "scheduled",
+      "source": "https://en.wikipedia.org/wiki/The_New_Simpsons_Movie",
+      "researchedAt": "2026-09-20T00:00:00Z",
+      "wikidataID": "Q136401922",
+      "poster": {
+        "url": "https://upload.wikimedia.org/wikipedia/en/7/78/The_New_Simpsons_Movie_Poster.jpg",
+        "source": "https://en.wikipedia.org/wiki/File:The_New_Simpsons_Movie_Poster.jpg",
+        "kind": "teaser"
+      }
+    },
+    {
+      "id": "ice-age-boiling-point",
+      "title": "Ice Age: Boiling Point",
+      "studio": "20th Century Animation",
+      "season": 2027,
+      "rank": 15,
+      "releaseDate": "2027-02-05",
+      "releaseStatus": "scheduled",
+      "source": "https://en.wikipedia.org/wiki/Ice_Age:_Boiling_Point",
+      "researchedAt": "2026-09-20T00:00:00Z",
+      "wikidataID": "Q131101064",
+      "poster": {
+        "url": "https://upload.wikimedia.org/wikipedia/en/7/7c/Ice_Age_Boiling_Point_film_poster.png",
+        "source": "https://en.wikipedia.org/wiki/File:Ice_Age_Boiling_Point_film_poster.png",
+        "kind": "teaser"
+      }
+    },
+    {
+      "id": "sonic-the-hedgehog-4",
+      "title": "Sonic the Hedgehog 4",
+      "studio": "Paramount Pictures",
+      "season": 2027,
+      "rank": 16,
+      "releaseDate": "2027-03-19",
+      "releaseStatus": "scheduled",
+      "source": "https://en.wikipedia.org/wiki/Sonic_the_Hedgehog_4_(film)",
+      "researchedAt": "2026-09-20T00:00:00Z",
+      "poster": null
+    },
+    {
+      "id": "resurrection-of-the-christ-part-one",
+      "title": "The Resurrection of the Christ: Part One",
+      "studio": "Lionsgate",
+      "season": 2027,
+      "rank": 17,
+      "releaseDate": "2027-05-06",
+      "releaseStatus": "scheduled",
+      "source": "https://en.wikipedia.org/wiki/The_Resurrection_of_the_Christ:_Part_One",
+      "researchedAt": "2026-09-20T00:00:00Z",
+      "wikidataID": "Q67151840",
+      "poster": {
+        "url": "https://upload.wikimedia.org/wikipedia/en/1/1b/The_Resurrection_of_the_Christ_-_Part_One_teaserposter.jpg",
+        "source": "https://en.wikipedia.org/wiki/File:The_Resurrection_of_the_Christ_-_Part_One_teaserposter.jpg",
+        "kind": "teaser"
+      }
+    },
+    {
+      "id": "the-bluey-movie",
+      "title": "The Bluey Movie",
+      "studio": "Ludo Studio",
+      "season": 2027,
+      "rank": 18,
+      "releaseDate": "2027-08-06",
+      "releaseStatus": "scheduled",
+      "source": "https://en.wikipedia.org/wiki/The_Bluey_Movie",
+      "researchedAt": "2026-09-20T00:00:00Z",
+      "wikidataID": "Q136661855",
+      "poster": {
+        "url": "https://upload.wikimedia.org/wikipedia/en/e/e2/The_Bluey_Movie_teaser_poster.jpg",
+        "source": "https://en.wikipedia.org/wiki/File:The_Bluey_Movie_teaser_poster.jpg",
+        "kind": "teaser"
+      }
+    },
+    {
+      "id": "the-exorcist-martyrs",
+      "title": "The Exorcist: Martyrs",
+      "studio": "Universal Pictures",
+      "season": 2027,
+      "rank": 19,
+      "releaseDate": "2027-03-12",
+      "releaseStatus": "scheduled",
+      "source": "https://en.wikipedia.org/wiki/The_Exorcist:_Martyrs",
+      "researchedAt": "2026-09-20T00:00:00Z",
+      "poster": null
+    },
+    {
+      "id": "narnia-the-magicians-nephew",
+      "title": "Narnia: The Magician's Nephew",
+      "studio": "Netflix",
+      "season": 2027,
+      "rank": 20,
+      "releaseDate": "2027-02-12",
+      "releaseStatus": "scheduled",
+      "source": "https://en.wikipedia.org/wiki/Narnia:_The_Magician%27s_Nephew",
+      "researchedAt": "2026-09-20T00:00:00Z",
+      "poster": {
+        "url": "https://upload.wikimedia.org/wikipedia/en/2/25/Narnia_The_Magician%27s_Nephew_film.jpg",
+        "source": "https://en.wikipedia.org/wiki/Narnia:_The_Magician%27s_Nephew",
+        "kind": "logo"
+      }
+    },
+    {
+      "id": "cocomelon-the-movie",
+      "title": "CoComelon: The Movie",
+      "studio": "Universal Pictures",
+      "season": 2027,
+      "rank": 21,
+      "releaseDate": "2027-02-12",
+      "releaseStatus": "scheduled",
+      "source": "https://en.wikipedia.org/wiki/CoComelon:_The_Movie",
+      "researchedAt": "2026-09-20T00:00:00Z",
+      "wikidataID": "Q136735877",
+      "poster": {
+        "url": "https://upload.wikimedia.org/wikipedia/en/8/88/Cocomelon%2C_The_Movie_poster.jpeg",
+        "source": "https://en.wikipedia.org/wiki/File:Cocomelon,_The_Movie_poster.jpeg",
+        "kind": "teaser"
+      }
+    },
+    {
+      "id": "bad-fairies",
+      "title": "Bad Fairies",
+      "studio": "Warner Bros. Pictures Animation",
+      "season": 2027,
+      "rank": 22,
+      "releaseDate": "2027-05-21",
+      "releaseStatus": "scheduled",
+      "source": "https://en.wikipedia.org/wiki/Bad_Fairies",
+      "researchedAt": "2026-09-20T00:00:00Z",
+      "poster": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Bad_Fairies_logo.jpg",
+        "source": "https://en.wikipedia.org/wiki/Bad_Fairies",
+        "kind": "logo"
+      }
+    },
+    {
+      "id": "tmnt-mutant-mayhem-sequel",
+      "title": "Untitled Teenage Mutant Ninja Turtles: Mutant Mayhem sequel",
+      "studio": "Paramount Pictures",
+      "season": 2027,
+      "rank": 23,
+      "releaseDate": "2027-08-13",
+      "releaseStatus": "scheduled",
+      "source": "https://en.wikipedia.org/wiki/Untitled_Teenage_Mutant_Ninja_Turtles:_Mutant_Mayhem_sequel",
+      "researchedAt": "2026-09-20T00:00:00Z",
+      "poster": null
+    },
+    {
+      "id": "animal-friends",
+      "title": "Animal Friends",
+      "studio": "Warner Bros. Pictures",
+      "season": 2027,
+      "rank": 24,
+      "releaseDate": "2027-01-22",
+      "releaseStatus": "scheduled",
+      "source": "https://en.wikipedia.org/wiki/Animal_Friends",
+      "researchedAt": "2026-09-20T00:00:00Z",
+      "poster": {
+        "url": "https://upload.wikimedia.org/wikipedia/en/7/7d/Animal_Friends.png",
+        "source": "https://en.wikipedia.org/wiki/Animal_Friends",
+        "kind": "logo"
+      }
+    },
+    {
+      "id": "the-beekeeper-2",
+      "title": "The Beekeeper 2",
+      "studio": "Amazon MGM Studios",
+      "season": 2027,
+      "rank": 25,
+      "releaseDate": "2027-01-14",
+      "releaseStatus": "scheduled",
+      "source": "https://en.wikipedia.org/wiki/The_Beekeeper_2",
+      "researchedAt": "2026-09-20T00:00:00Z",
+      "poster": null
+    },
+    {
+      "id": "the-comeback-king",
+      "title": "The Comeback King",
+      "studio": "Universal Pictures",
+      "season": 2027,
+      "rank": 26,
+      "releaseDate": "2027-02-05",
+      "releaseStatus": "scheduled",
+      "source": "https://en.wikipedia.org/wiki/The_Comeback_King",
+      "researchedAt": "2026-09-20T00:00:00Z",
+      "wikidataID": "Q139005148",
+      "poster": {
+        "url": "https://upload.wikimedia.org/wikipedia/en/2/22/The_Comeback_King_poster.jpg",
+        "source": "https://en.wikipedia.org/wiki/File:The_Comeback_King_poster.jpg",
+        "kind": "teaser"
+      }
+    },
+    {
+      "id": "children-of-blood-and-bone",
+      "title": "Children of Blood and Bone",
+      "studio": "Paramount Pictures",
+      "season": 2027,
+      "rank": 27,
+      "releaseDate": "2027-01-15",
+      "releaseStatus": "scheduled",
+      "source": "https://en.wikipedia.org/wiki/Children_of_Blood_and_Bone_(film)",
+      "researchedAt": "2026-09-20T00:00:00Z",
+      "wikidataID": "Q131854232",
+      "poster": {
+        "url": "https://upload.wikimedia.org/wikipedia/en/8/8a/Children_of_Blood_and_Bone_%28film%29_poster.jpg",
+        "source": "https://en.wikipedia.org/wiki/File:Children_of_Blood_and_Bone_(film)_poster.jpg",
+        "kind": "poster"
+      }
+    },
+    {
+      "id": "fast",
+      "title": "F.A.S.T.",
+      "studio": "Warner Bros. Pictures",
+      "season": 2027,
+      "rank": 28,
+      "releaseDate": "2027-05-14",
+      "releaseStatus": "scheduled",
+      "source": "https://en.wikipedia.org/wiki/List_of_American_films_of_2027",
+      "researchedAt": "2026-09-20T00:00:00Z",
+      "poster": null
+    },
+    {
+      "id": "beach-read",
+      "title": "Beach Read",
+      "studio": "20th Century Studios",
+      "season": 2027,
+      "rank": 29,
+      "releaseDate": "2027-05-07",
+      "releaseStatus": "scheduled",
+      "source": "https://en.wikipedia.org/wiki/Beach_Read_(film)",
+      "researchedAt": "2026-09-20T00:00:00Z",
+      "poster": null
+    },
+    {
+      "id": "k-pop-the-debut",
+      "title": "K-Pop: The Debut",
+      "studio": "Paramount Pictures",
+      "season": 2027,
+      "rank": 30,
+      "releaseDate": "2027-02-26",
+      "releaseStatus": "scheduled",
+      "source": "https://en.wikipedia.org/wiki/K-Pop:_The_Debut",
+      "researchedAt": "2026-09-20T00:00:00Z",
+      "poster": null
+    },
+    {
+      "id": "the-catch",
+      "title": "The Catch",
+      "studio": "Universal Pictures",
+      "season": 2027,
+      "rank": 31,
+      "releaseDate": "2027-05-21",
+      "releaseStatus": "scheduled",
+      "source": "https://en.wikipedia.org/wiki/The_Catch_(2027_film)",
+      "researchedAt": "2026-09-20T00:00:00Z",
+      "poster": null
+    },
+    {
+      "id": "snoop",
+      "title": "Snoop",
+      "studio": "Universal Pictures",
+      "season": 2027,
+      "rank": 32,
+      "releaseDate": "2027-08-06",
+      "releaseStatus": "scheduled",
+      "source": "https://en.wikipedia.org/wiki/List_of_American_films_of_2027",
+      "researchedAt": "2026-09-20T00:00:00Z",
+      "poster": null
+    },
+    {
+      "id": "the-thomas-crown-affair",
+      "title": "The Thomas Crown Affair",
+      "studio": "Amazon MGM Studios",
+      "season": 2027,
+      "rank": 33,
+      "releaseDate": "2027-03-05",
+      "releaseStatus": "scheduled",
+      "source": "https://en.wikipedia.org/wiki/The_Thomas_Crown_Affair_(2027_film)",
+      "researchedAt": "2026-09-20T00:00:00Z",
+      "wikidataID": "Q133816458",
+      "poster": {
+        "url": "https://upload.wikimedia.org/wikipedia/en/1/16/The_Thomas_Crown_Affair_2027_poster.jpg",
+        "source": "https://en.wikipedia.org/wiki/File:The_Thomas_Crown_Affair_2027_poster.jpg",
+        "kind": "teaser"
+      }
+    },
+    {
+      "id": "john-rambo",
+      "title": "John Rambo",
+      "studio": "Lionsgate",
+      "season": 2027,
+      "rank": 34,
+      "releaseDate": "2027-06-04",
+      "releaseStatus": "scheduled",
+      "source": "https://en.wikipedia.org/wiki/John_Rambo_(film)",
+      "researchedAt": "2026-09-20T00:00:00Z",
+      "poster": null
+    },
+    {
+      "id": "shiver",
+      "title": "Shiver",
+      "studio": "Warner Bros. Pictures",
+      "season": 2027,
+      "rank": 35,
+      "releaseDate": "2027-08-13",
+      "releaseStatus": "scheduled",
+      "source": "https://en.wikipedia.org/wiki/Shiver_(2027_film)",
+      "researchedAt": "2026-09-20T00:00:00Z",
+      "poster": null
+    },
+    {
+      "id": "spaceballs-the-new-one",
+      "title": "Spaceballs: The New One",
+      "studio": "Amazon MGM Studios",
+      "season": 2027,
+      "rank": 36,
+      "releaseDate": "2027-04-23",
+      "releaseStatus": "scheduled",
+      "source": "https://en.wikipedia.org/wiki/List_of_American_films_of_2027",
+      "researchedAt": "2026-09-20T00:00:00Z",
+      "poster": null
+    },
+    {
+      "id": "panic-carefully",
+      "title": "Panic Carefully",
+      "studio": "Warner Bros. Pictures",
+      "season": 2027,
+      "rank": 37,
+      "releaseDate": "2027-04-09",
+      "releaseStatus": "scheduled",
+      "source": "https://en.wikipedia.org/wiki/Panic_Carefully",
+      "researchedAt": "2026-09-20T00:00:00Z",
+      "poster": null
+    },
+    {
+      "id": "possession",
+      "title": "Possession",
+      "studio": "Paramount Pictures",
+      "season": 2027,
+      "rank": 38,
+      "releaseDate": "2027-06-11",
+      "releaseStatus": "scheduled",
+      "source": "https://en.wikipedia.org/wiki/Possession_(2027_film)",
+      "researchedAt": "2026-09-20T00:00:00Z",
+      "poster": null
+    },
+    {
+      "id": "jason-statham-stole-my-bike",
+      "title": "Jason Statham Stole My Bike",
+      "studio": "Black Bear Pictures",
+      "season": 2027,
+      "rank": 39,
+      "releaseDate": "2027-08-06",
+      "releaseStatus": "scheduled",
+      "source": "https://en.wikipedia.org/wiki/Jason_Statham_Stole_My_Bike",
+      "researchedAt": "2026-09-20T00:00:00Z",
+      "poster": null
+    },
+    {
+      "id": "remain",
+      "title": "Remain",
+      "studio": "Warner Bros. Pictures",
+      "season": 2027,
+      "rank": 40,
+      "releaseDate": "2027-02-05",
+      "releaseStatus": "scheduled",
+      "source": "https://en.wikipedia.org/wiki/Remain_(film)",
+      "researchedAt": "2026-09-20T00:00:00Z",
+      "wikidataID": "Q134979717",
+      "poster": {
+        "url": "https://upload.wikimedia.org/wikipedia/en/a/a3/Remain_poster.jpeg",
+        "source": "https://en.wikipedia.org/wiki/File:Remain_poster.jpeg",
+        "kind": "teaser"
+      }
+    },
+    {
+      "id": "day-drinker",
+      "title": "Day Drinker",
+      "studio": "Lionsgate",
+      "season": 2027,
+      "rank": 41,
+      "releaseDate": "2027-03-26",
+      "releaseStatus": "scheduled",
+      "source": "https://en.wikipedia.org/wiki/Day_Drinker",
+      "researchedAt": "2026-09-20T00:00:00Z",
+      "poster": null
+    },
+    {
+      "id": "the-comebacker",
+      "title": "The Comebacker",
+      "studio": "Columbia Pictures",
+      "season": 2027,
+      "rank": 42,
+      "releaseDate": "2027-07-30",
+      "releaseStatus": "scheduled",
+      "source": "https://en.wikipedia.org/wiki/List_of_American_films_of_2027",
+      "researchedAt": "2026-09-20T00:00:00Z",
+      "poster": null
+    },
+    {
+      "id": "the-nightingale",
+      "title": "The Nightingale",
+      "studio": "TriStar Pictures",
+      "season": 2027,
+      "rank": 43,
+      "releaseDate": "2027-03-19",
+      "releaseStatus": "scheduled",
+      "source": "https://en.wikipedia.org/wiki/The_Nightingale_(2027_film)",
+      "researchedAt": "2026-09-20T00:00:00Z",
+      "poster": null
+    },
+    {
+      "id": "wife-and-dog",
+      "title": "Wife & Dog",
+      "studio": "Black Bear Pictures",
+      "season": 2027,
+      "rank": 44,
+      "releaseDate": "2027-02-19",
+      "releaseStatus": "scheduled",
+      "source": "https://en.wikipedia.org/wiki/Wife_%26_Dog",
+      "researchedAt": "2026-09-20T00:00:00Z",
+      "poster": null
+    },
+    {
+      "id": "skeletons",
+      "title": "Skeletons",
+      "studio": "Columbia Pictures",
+      "season": 2027,
+      "rank": 45,
+      "releaseDate": "2027-06-04",
+      "releaseStatus": "scheduled",
+      "source": "https://en.wikipedia.org/wiki/Skeletons_(2027_film)",
+      "researchedAt": "2026-09-20T00:00:00Z",
+      "poster": null
+    },
+    {
+      "id": "the-revenge-of-la-llorona",
+      "title": "The Revenge of La Llorona",
+      "studio": "New Line Cinema",
+      "season": 2027,
+      "rank": 46,
+      "releaseDate": "2027-02-26",
+      "releaseStatus": "scheduled",
+      "source": "https://en.wikipedia.org/wiki/The_Revenge_of_La_Llorona",
+      "researchedAt": "2026-09-20T00:00:00Z",
+      "poster": null
+    },
+    {
+      "id": "cliffhanger",
+      "title": "Cliffhanger",
+      "studio": "Decal",
+      "season": 2027,
+      "rank": 47,
+      "releaseDate": "2027-02-24",
+      "releaseStatus": "scheduled",
+      "source": "https://en.wikipedia.org/wiki/List_of_American_films_of_2027",
+      "researchedAt": "2026-09-20T00:00:00Z",
+      "poster": null
+    },
+    {
+      "id": "karoshi",
+      "title": "Karoshi",
+      "studio": "Lionsgate",
+      "season": 2027,
+      "rank": 48,
+      "releaseDate": "2027-01-29",
+      "releaseStatus": "scheduled",
+      "source": "https://en.wikipedia.org/wiki/List_of_American_films_of_2027",
+      "researchedAt": "2026-09-20T00:00:00Z",
+      "poster": null
+    },
+    {
+      "id": "the-conjuring-first-communion",
+      "title": "The Conjuring: First Communion",
+      "studio": "New Line Cinema",
+      "season": 2027,
+      "rank": 49,
+      "releaseDate": "2027-09-10",
+      "releaseStatus": "scheduled",
+      "source": "https://en.wikipedia.org/wiki/List_of_American_films_of_2027",
+      "researchedAt": "2026-09-20T00:00:00Z",
+      "poster": null
+    },
+    {
+      "id": "untitled-blair-witch",
+      "title": "Untitled Blair Witch film",
+      "studio": "Lionsgate",
+      "season": 2027,
+      "rank": 50,
+      "releaseDate": "2027-09-24",
+      "releaseStatus": "scheduled",
+      "source": "https://en.wikipedia.org/wiki/List_of_American_films_of_2027",
+      "researchedAt": "2026-09-20T00:00:00Z",
+      "poster": null
+    },
+    {
+      "id": "the-great-beyond",
+      "title": "The Great Beyond",
+      "studio": "Warner Bros. Pictures",
+      "season": 2027,
+      "rank": 51,
+      "releaseDate": "2027-10-01",
+      "releaseStatus": "scheduled",
+      "source": "https://en.wikipedia.org/wiki/The_Great_Beyond_(film)",
+      "researchedAt": "2026-09-20T00:00:00Z",
+      "poster": null
+    },
+    {
+      "id": "sleepover",
+      "title": "Sleepover",
+      "studio": "Blumhouse Productions",
+      "season": 2027,
+      "rank": 52,
+      "releaseDate": "2027-10-08",
+      "releaseStatus": "scheduled",
+      "source": "https://en.wikipedia.org/wiki/List_of_American_films_of_2027",
+      "researchedAt": "2026-09-20T00:00:00Z",
+      "poster": null
+    },
+    {
+      "id": "naughty",
+      "title": "Naughty",
+      "studio": "Universal Pictures",
+      "season": 2027,
+      "rank": 53,
+      "releaseDate": "2027-11-05",
+      "releaseStatus": "scheduled",
+      "source": "https://en.wikipedia.org/wiki/List_of_American_films_of_2027",
+      "researchedAt": "2026-09-20T00:00:00Z",
+      "poster": null
+    },
+    {
+      "id": "charlie-vs-the-chocolate-factory",
+      "title": "Charlie vs. the Chocolate Factory",
+      "studio": "Netflix",
+      "season": 2027,
+      "rank": 54,
+      "releaseDate": "2027-11-05",
+      "releaseStatus": "scheduled",
+      "source": "https://en.wikipedia.org/wiki/List_of_American_films_of_2027",
+      "researchedAt": "2026-09-20T00:00:00Z",
+      "poster": null
+    },
+    {
+      "id": "helldivers",
+      "title": "Helldivers",
+      "studio": "Columbia Pictures",
+      "season": 2027,
+      "rank": 55,
+      "releaseDate": "2027-11-10",
+      "releaseStatus": "scheduled",
+      "source": "https://en.wikipedia.org/wiki/List_of_American_films_of_2027",
+      "researchedAt": "2026-09-20T00:00:00Z",
+      "poster": null
+    },
+    {
+      "id": "margie-claus",
+      "title": "Margie Claus",
+      "studio": "Warner Bros. Pictures Animation",
+      "season": 2027,
+      "rank": 56,
+      "releaseDate": "2027-11-12",
+      "releaseStatus": "scheduled",
+      "source": "https://en.wikipedia.org/wiki/List_of_American_films_of_2027",
+      "researchedAt": "2026-09-20T00:00:00Z",
+      "poster": null
+    },
+    {
+      "id": "tomorrow-and-tomorrow-and-tomorrow",
+      "title": "Tomorrow, and Tomorrow, and Tomorrow",
+      "studio": "Paramount Pictures",
+      "season": 2027,
+      "rank": 57,
+      "releaseDate": "2027-11-12",
+      "releaseStatus": "scheduled",
+      "source": "https://en.wikipedia.org/wiki/List_of_American_films_of_2027",
+      "researchedAt": "2026-09-20T00:00:00Z",
+      "poster": null
+    },
+    {
+      "id": "gremlins-3",
+      "title": "Gremlins 3",
+      "studio": "Warner Bros. Pictures",
+      "season": 2027,
+      "rank": 58,
+      "releaseDate": "2027-11-19",
+      "releaseStatus": "scheduled",
+      "source": "https://en.wikipedia.org/wiki/List_of_American_films_of_2027",
+      "researchedAt": "2026-09-20T00:00:00Z",
+      "poster": null
+    },
+    {
+      "id": "the-housemaids-secret",
+      "title": "The Housemaid's Secret",
+      "studio": "Lionsgate",
+      "season": 2027,
+      "rank": 59,
+      "releaseDate": "2027-12-17",
+      "releaseStatus": "scheduled",
+      "source": "https://en.wikipedia.org/wiki/List_of_American_films_of_2027",
+      "researchedAt": "2026-09-20T00:00:00Z",
+      "poster": null
+    },
+    {
+      "id": "a-quiet-place-part-iii",
+      "title": "A Quiet Place Part III",
+      "studio": "Paramount Pictures",
+      "season": 2027,
+      "rank": 60,
+      "releaseDate": "2027-07-30",
+      "releaseStatus": "scheduled",
+      "source": "https://en.wikipedia.org/wiki/A_Quiet_Place_Part_III",
+      "researchedAt": "2026-09-20T00:00:00Z",
+      "poster": null
+    },
+    {
+      "id": "air-bud-returns",
+      "title": "Air Bud Returns",
+      "studio": "Cineverse",
+      "season": 2027,
+      "rank": 61,
+      "releaseDate": "2027-01-22",
+      "releaseStatus": "scheduled",
+      "source": "https://en.wikipedia.org/wiki/Air_Bud_Returns",
+      "researchedAt": "2026-09-20T00:00:00Z",
+      "wikidataID": "Q136505092",
+      "poster": {
+        "url": "https://upload.wikimedia.org/wikipedia/en/3/30/Air_Bud_Returns_poster.jpg",
+        "source": "https://en.wikipedia.org/wiki/File:Air_Bud_Returns_poster.jpg",
+        "kind": "teaser"
+      }
+    },
+    {
+      "id": "the-third-parent",
+      "title": "The Third Parent",
+      "studio": "Bleecker Street",
+      "season": 2027,
+      "rank": 62,
+      "releaseDate": "2027-01-22",
+      "releaseStatus": "scheduled",
+      "source": "https://en.wikipedia.org/wiki/The_Third_Parent",
+      "researchedAt": "2026-09-20T00:00:00Z",
+      "poster": null
+    },
+    {
+      "id": "the-rescue",
+      "title": "The Rescue",
+      "studio": "Paramount Pictures",
+      "season": 2027,
+      "rank": 63,
+      "releaseDate": "2027-01-29",
+      "releaseStatus": "scheduled",
+      "source": "https://en.wikipedia.org/wiki/The_Rescue_(2027_film)",
+      "researchedAt": "2026-09-20T00:00:00Z",
+      "poster": null
+    },
+    {
+      "id": "pendulum",
+      "title": "Pendulum",
+      "studio": "Vertical",
+      "season": 2027,
+      "rank": 64,
+      "releaseDate": "2027-01-01",
+      "releaseStatus": "scheduled",
+      "source": "https://en.wikipedia.org/wiki/List_of_American_films_of_2027",
+      "researchedAt": "2026-09-20T00:00:00Z",
+      "poster": null
+    }
+  ],
+  "grosses": []
+}
